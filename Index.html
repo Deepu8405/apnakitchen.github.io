@@ -8,7 +8,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/13a24280d0.js" crossorigin="anonymous"></script>
-
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <head>
 <body >
   
@@ -25,12 +29,12 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#home" class="navigation__link"><span>01</span>Home</a></li>
-                <li class="navigation__item"><a href="#menuuuuu" class="navigation__link"><span>01</span>Menu</a></li>
-                <li class="navigation__item"><a href="#menuu" class="navigation__link"><span>02</span>About_Us</a></li>
-                <li class="navigation__item"><a href="#speciality" class="navigation__link"><span>03</span>Specialities</a></li>
-                <li class="navigation__item"><a href="#recom" class="navigation__link"><span>04</span>Recomended</a></li>
-                <li class="navigation__item"><a href="#review" class="navigation__link"><span>05</span>Review Section</a></li>
-                <li class="navigation__item"><a href="#footer" class="navigation__link"><span>05</span>Footer</a></li>
+                <li class="navigation__item"><a href="#menuuuuu" class="navigation__link"><span>02</span>Menu</a></li>
+                <li class="navigation__item"><a href="#menuu" class="navigation__link"><span>03</span>About_Us</a></li>
+                <li class="navigation__item"><a href="#speciality" class="navigation__link"><span>04</span>Specialities</a></li>
+                <li class="navigation__item"><a href="#recom" class="navigation__link"><span>05</span>Recomended</a></li>
+                <li class="navigation__item"><a href="#review" class="navigation__link"><span>06</span>Review Section</a></li>
+                <li class="navigation__item"><a href="#footer" class="navigation__link"><span>07</span>Footer</a></li>
                 </ul>
         </nav>
     </div>
@@ -343,65 +347,73 @@
     </div>
     </section>
 <!-- end of feed back part -->
-<!-- feedack form -->
-<h2 style="text-align: center;">FEEDBACK FORM</h2>    
-<div class="container">    
-  <form>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="fname">First Name</label>    
-      </div>    
-      <div class="col-75">    
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
-      </div>    
-    </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="lname">Last Name</label>    
-      </div>    
-      <div class="col-75">    
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
-      </div>    
-    </div>    
-    <div class="row">    
-        <div class="col-25">    
-          <label for="email">Mail Id</label>    
-        </div>    
-        <div class="col-75">    
-          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
-        </div>    
-      </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="country">Country</label>    
-      </div>    
-      <div class="col-75">    
-        <select id="country" name="country">    
-            <option value="none">Select Country</option>    
-          <option value="australia">Australia</option>    
-          <option value="canada">Canada</option>    
-          <option value="usa">USA</option>    
-          <option value="russia">Russia</option>    
-          <option value="japan">Japan</option>    
-          <option value="india">India</option>    
-          <option value="china">China</option>    
-        </select>    
-      </div>    
-    </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="feed_back">Feed Back</label>    
-      </div>    
-      <div class="col-75">    
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200x"></textarea>    
-      </div>    
-    </div>    
-    <div class="row">    
-      <input type="submit" value="Submit">    
-    </div>    
-  </form>    
-</div>    
-    
+<!-- start of feed back part -->
+<br><br><br><br><br><br><br><br>
+<section id="feedback-form">
+    <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>Feedback</span>
+                  <span>Form</span>
+                </div>
+                <div class="app-contact">CONTACT INFO : 7370073603</div>
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="NAME" >
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL">
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO">
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="MESSAGE">
+                  </div>
+                  <div class="app-form-group buttons">
+                    <button class="app-form-button">CANCEL</button>
+                    <button class="app-form-button">SEND</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="credits">
+            inspired by
+            <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+              <svg class="dribbble" viewBox="0 0 200 200">
+                <g stroke="#ffffff" fill="none">
+                  <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
+                  <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
+                  <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
+                  <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
+                </g>
+              </svg>
+             KSHITIJ(IITKGP)
+            </a>
+          </div>
+        </div>
+      </div>
+      
+
+</section>
 
 <!-- end of feedback form -->
 <!-- footer  -->
@@ -415,51 +427,85 @@
 </section>
 <!-- social icons -->
 <!-- start of footer -->
-<section id="footer" class="footer">
-    <div class="end">
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
-        yhgfasdfhsjdfhsadjfsjdfshh;s;dfa;sdfja;osdfsdfisdfsadfsafd
+<footer id="footer" class="clearfix">
+    <div id="footer-widgets">
+
+      <div class="container">
+
+      <div id="footer-wrapper">
+
+        <div class="row">
+          <div class="col-sm-6 col-md-2">
+            <div id="meta-3" class="widget widgetFooter widget_meta">
+            <h4 class="widgettitle">Importent Page :</h4>
+            <ul>
+            <li><a href="# home"><i class="fa fa-home fa-fw"></i> Home</a></li>
+            <li><a href="privacypolicy.php"><i class="fa fa-link"></i>   Privacy Policy</a></li>
+            <li><a href="#"><i class="fa fa-envelope fa-fw"></i> Contact Us</a></li>
+           </ul>
+</div>      </div> <!-- end widget1 -->
+ <div class="col-sm-6 col-md-4">
+            <div id="meta-4" class="widget widgetFooter widget_meta">
+            <h4 class="widgettitle">Book YourS Seat :</h4>
+
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">E-mail :</span>
+                <input class="form-control" placeholder="Write your email .." type="text">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">Phone  :</span>
+                <input class="form-control" placeholder="+96777000000" type="text">
+                 <span class="input-group-btn">
+                  <button class="btn btn-primary su" type="button">Book Now...</button>
+                </span>
+              </div>
+            </div>
+
+
+            </div>
+           </div> <!-- end widget1 -->
+
+          <div class="col-sm-6 col-md-4">
+            <div id="search-3" class="widget widgetFooter widget_search"><h4 class="widgettitle">Search Menu :</h4>
+
+              <div class="form-group">
+                              <label class="control-label">Write what you want to search for it  :</label>
+                              <div class="input-group">
+                                <span class="input-group-addon">Keyword :</span>
+                                <input class="form-control" placeholder="Keyword for search ..." type="text">
+                                 <span class="input-group-btn">
+                                  <button class="btn btn-primary se" type="button">Search !</button>
+                                </span>
+                              </div>
+                            </div>
+
+              </div>            </div> <!-- end widget1 -->
+
+        </div> <!-- end .row -->
+
+      </div> <!-- end #footer-wrapper -->
+
+      </div> <!-- end .container -->
+    </div> <!-- end #footer-widgets -->
+
+    <div id="sub-floor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 copyright">
+           Copy right for Dev.org © 2021
+          </div>
+          <div class="col-md-4 col-md-offset-4 attribution">
+           Developer by  <a target="_blank" href="#">Deepu</a> .
+          </div>
+        </div> <!-- end .row -->
+      </div>
     </div>
 
-</section>
+  </footer>
 
 <!-- end of footer -->
 </body>
