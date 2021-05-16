@@ -649,7 +649,7 @@ overflow: scroll;
   text-transform: uppercase;
   text-align: center;
 }
-.rcontainer .btn {
+.recom .btn {
     position: absolute;
   
     transform: translate(-50%, -50%);
@@ -665,7 +665,7 @@ overflow: scroll;
     background-color: rgb(155, 230, 253);
   }
   
-  .rcontainer .btn:hover {
+  .recom .btn:hover {
     background-color: green;
     color:orange;
   }
