@@ -605,6 +605,7 @@ overflow: scroll;
    height: auto;
    align-content: center;
 padding-left: 60px;
+overflow: scroll;
 
   }
 .rimages {
